@@ -1,0 +1,261 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 13);
+    color: white;
+}
+
+/* Header and Navbar */
+header {
+    background-color: rgb(26, 25, 49);
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgb(26, 25, 49);
+}
+
+.navbar .left {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .right ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .right ul li {
+    margin-left: 20px;
+}
+
+.navbar .right ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .right ul li a:hover {
+    color: rgb(117, 117, 212);
+    font-size: 1.05rem;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* First Section */
+.fristsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.fristsection .leftsection {
+    flex: 1;
+    font-size: 38px;
+}
+
+.fristsection .leftsection .purple {
+    color: purple;
+    font-weight: bold;
+}
+
+#element {
+    color: violet;
+}
+
+.fristsection .rightsection img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Second Section */
+.secondsection {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.secondsection .text-gray {
+    color: gray;
+    font-size: 18px;
+}
+
+.secondsection h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vertical {
+    background: rgb(26, 25, 49);
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.vertical .image-top {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.vertical-title {
+    font-size: 22px;
+    margin: 10px 0;
+    color: white;
+}
+
+.vertical-desc {
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* About Section */
+#about {
+    background: rgb(26, 25, 49);
+    padding: 60px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: rgb(26, 25, 49);
+    border-radius: 10px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: rgb(36, 35, 59);
+    color: white;
+}
+
+.contact-form button {
+    background: rgb(117, 117, 212);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: rgb(87, 87, 172);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .fristsection {
+        flex-direction: column;
+    }
+
+    .fristsection .leftsection,
+    .fristsection .rightsection {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .right ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .fristsection .leftsection {
+        font-size: 24px;
+    }
+
+    .secondsection h1 {
+        font-size: 28px;
+    }
+
+    .contact-section h1 {
+        font-size: 28px;
+    }
+}
